@@ -40,9 +40,20 @@ print(myMan.get_fname())
 print(myMan.get_lname())
 print(myMan.get_age())
 
+# argv ,*argv in python
 
+def myFun(*argv):
+	for arg in argv:
+		print(arg)
 
+myFun('Hello', 'Welcome', 'to', 'GeeksforGeeks')
 
+def myFun(arg1, *argv):
+	print("First argument :", arg1)
+	for arg in argv:
+		print("Next argument through *argv :", arg)
+
+myFun('Hello', 'Welcome', 'to', 'GeeksforGeeks')
 
 
 
